@@ -1,0 +1,13 @@
+.footer {
+    color: #ffc97b;
+    max-width: 100%;
+  }
+  .footer #github-link {
+    text-decoration: none;
+    outline: none;
+  }
+  
+  .footer #githut-link.hover {
+    cursor: pointer;
+    color: #44558f;
+  }
