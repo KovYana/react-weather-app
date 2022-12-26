@@ -26,7 +26,7 @@ export default function CurrentTemperature(props) {
           </p>
 
           <p className="details" id="wind">
-            Wind: {props.wind} km/h
+            Wind: {Math.round(props.wind)} km/h
           </p>
         </div>
       </div>
