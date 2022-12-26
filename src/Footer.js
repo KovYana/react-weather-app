@@ -8,13 +8,13 @@ export default function Footer() {
       <div className="text-center">
         <p>
           The project was coded by <strong>Yana Kovalchuk</strong> and is{" "}
-          <a href="https://github.com/KovYana/Weather-app " id="github-link">
+          <a href="https://github.com/KovYana/react-weather-app" id="github-link">
             {" "}
             open-sourced on GitHub
           </a>{" "}
           and{" "}
           <a
-            href="https://app.netlify.com/sites/moonlit-custard-9e267a/deploys/"
+            href="https://chipper-gumption-6f60c4.netlify.app/"
             id="github-link"
           >
             hosted on Nestify.
