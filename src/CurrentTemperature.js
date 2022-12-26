@@ -2,34 +2,31 @@ import React from "react";
 
 import "./CurrentTemperature.css";
 
-export default function CurrentTemperature() {
+export default function CurrentTemperature(props) {
   return (
     <div className="currentTemperature">
       <div className="row text-center">
         <div className="col-md-4">
-          <h1 id="current-city">Wrocław</h1>
-          <div id="date-and-time">
-            Friday, <span role="img">⌚</span> 12:14
-            <div id="temperature-characterictic">cloudy</div>
-          </div>
+         <h1 id="current-city">{props.city}</h1>
+        <div id="temperature-characterictic">{props.description}</div>
+          
         </div>
         <div className="col-md-4">
           <h2 className="temperature">
             <img src="" alt="" className="emoji" id="icon" />
-            🌤️
-            <span id="current-temperature">5</span>
-            <span className="units" id="units">
-              °C | °F
+            {props.icon}
+            <span id="current-temperature">{Math.round (props.temperature)}</span>
+            <span className="units" id="units">°C
             </span>
           </h2>
         </div>
         <div className="col-md-4">
           <p className="details" id="humidity">
-            Humidity: 95%
+            Humidity: {props.humidity}%
           </p>
 
           <p className="details" id="wind">
-            Wind: 3 km/h
+            Wind: {props.wind} km/h
           </p>
         </div>
       </div>

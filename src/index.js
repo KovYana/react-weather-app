@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import SearchForm from './SearchForm.js';
-import CurrentTemperature from './CurrentTemperature.js';
+
 import Footer from './Footer.js';
 import reportWebVitals from './reportWebVitals';
 
@@ -12,7 +12,7 @@ root.render(
     <div className='weather-project'>
     <div className='weather-app'>
     <SearchForm />
-    <CurrentTemperature />
+  
     </div>
     <Footer />
     </div>
