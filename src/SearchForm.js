@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import "./SearchForm.css";
+import FormattedDate from './FormattedDate';
 
 
 export default function SearchFrom(props) {
@@ -11,7 +12,7 @@ export default function SearchFrom(props) {
     setWeatherData({
       ready: true,
       city: response.data.city,
-      date: "Friday, 12:14",
+      date: new Date (response.data.time * 1000),
       description: response.data.condition.description,
       iconUrl: response.data.condition.icon_url,
       iconDescription: response.data.condition.icon,
@@ -51,7 +52,7 @@ if (weatherData.ready){
       <div className="row text-center">
         <div className="col-md-4">
          <h1 id="current-city">{weatherData.city}</h1>
-         <div id="date-and-time">{weatherData.date}</div>
+         <div id="date-and-time"><FormattedDate date = {weatherData.date} /></div>
         <div id="temperature-characterictic" className='text-capitalize'>{weatherData.description}</div>
           
         </div>
