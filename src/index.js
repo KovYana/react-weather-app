@@ -12,8 +12,10 @@ root.render(
   <React.StrictMode>
     <div className='weather-project'>
     <div className='weather-app'>
+      <div className='container'>
     <SearchForm />
   
+    </div>
     </div>
     <Footer />
     </div>
