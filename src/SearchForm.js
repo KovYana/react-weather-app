@@ -39,7 +39,7 @@ if (weatherData.ready){
     <div className="SearchForm">
       <form onSubmit={handleSubmit} className="text-center" id="search-form" >
         <div className="row">
-          <div className="col-sm-6">
+          <div className="col-sm-9">
             <input
               type="search"
               placeholder="Type your city.."
