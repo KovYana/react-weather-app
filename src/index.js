@@ -13,11 +13,10 @@ root.render(
     <div className='weather-project'>
     <div className='weather-app'>
       <div className='container'>
-    <SearchForm defaultCity="Kyiv"/>
-   
+    <SearchForm defaultCity="Kyiv"/>     
+      </div>
+    </div>
     <Footer />
-    </div>
-    </div>
     </div>
   </React.StrictMode>
 );
