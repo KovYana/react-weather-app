@@ -3,6 +3,7 @@ import axios from 'axios';
 import "./SearchForm.css";
 
 import WeatherInfo from './WeatherInfo';
+import WeatherForecast from './WeatherForecast';
 
 export default function SearchFrom(props) {
   const[city, setCity] = useState(props.defaultCity);
@@ -62,6 +63,7 @@ if (weatherData.ready){
         </div>
       </form>
       <WeatherInfo data={weatherData}/>
+      <WeatherForecast data={weatherData}/>
     </div>
   );
   } else {
