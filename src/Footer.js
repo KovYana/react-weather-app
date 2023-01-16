@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="text-center">
         <p>
           The project was coded by <strong>Yana Kovalchuk</strong> and is{" "}
-          <a href="https://github.com/KovYana/react-weather-app" id="github-link"_blank>
+          <a href="https://github.com/KovYana/react-weather-app" id="github-link" target="_blank" rel="noreferrer">
             {" "}
             open-sourced on GitHub
           </a>{" "}
@@ -16,7 +16,8 @@ export default function Footer() {
           <a
             href="https://chipper-gumption-6f60c4.netlify.app/"
             id="github-link"
-            _blank
+            target="_blank"
+            rel="noreferrer"
           >
             hosted on Netlify.
           </a>
